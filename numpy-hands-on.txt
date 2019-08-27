@@ -87,3 +87,49 @@ print('Vertical Append:', np.vstack((f, g)))
 op:
 Vertical Append: [[1 2 3]
  [4 5 6]]
+
+Generate Random Numbers
+normal_array = np.random.normal(5, 0.5, 10)
+print(normal_array)		
+op:
+[5.56171852 4.84233558 4.65392767 4.946659   4.85165567 5.61211317 4.46704244 5.22675736 4.49888936 4.68731125]	
+
+Indexing and Slicing NumPy Arrays in Python with Example
+Indexing and slicing
+## Slice
+import numpy as np
+e  = np.array([(1,2,3), (4,5,6)])
+
+print('First row:', e[0])
+print('Second row:', e[1])
+op:
+First row: [1 2 3]
+Second row: [4 5 6]
+
+print('Second column:', e[:,1])		
+op:
+Second column: [2 5]			
+
+## Second Row, two values
+print(e[1, :2])			
+[4 5]
+
+Statistical function
+import numpy as np
+normal_array = np.random.normal(5, 0.5, 10)
+print(normal_array)		
+
+### Min 
+print(np.min(normal_array))
+
+### Max 
+print(np.max(normal_array))
+
+### Mean 
+print(np.mean(normal_array))
+
+### Median
+print(np.median(normal_array))
+
+### Sd
+print(np.std(normal_array))
