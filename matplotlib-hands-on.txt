@@ -1,4 +1,4 @@
-python -mpip install -U matplotlib
+python -m pip install matplotlib
 
 Line plot :
 from matplotlib import pyplot as plt 
@@ -27,8 +27,8 @@ y = [10, 5, 8, 4, 2]
 plt.scatter(x, y) 
 plt.show()
 
-pip install pandas
-pip install numpy
+python -m pip install pandas
+python -m pip install numpy
 
 Basic plotting: 
 import matplotlib.pyplot as plt 
