@@ -1,0 +1,64 @@
+python -mpip install -U matplotlib
+
+Line plot :
+from matplotlib import pyplot as plt 
+x = [5, 2, 9, 4, 7] 
+y = [10, 5, 8, 4, 2] 
+plt.plot(x,y) 
+plt.show() 
+
+Bar plot :
+from matplotlib import pyplot as plt 
+x = [5, 2, 9, 4, 7] 
+y = [10, 5, 8, 4, 2] 
+plt.bar(x,y) 
+plt.show() 
+
+Histogram :
+from matplotlib import pyplot as plt 
+y = [10, 5, 8, 4, 2] 
+plt.hist(y) 
+plt.show() 
+
+Scatter Plot :
+from matplotlib import pyplot as plt 
+x = [5, 2, 9, 4, 7] 
+y = [10, 5, 8, 4, 2] 
+plt.scatter(x, y) 
+plt.show()
+
+pip install pandas
+pip install numpy
+
+Basic plotting: 
+import matplotlib.pyplot as plt 
+import pandas as pd 
+import numpy as np 
+ts = pd.Series(np.random.randn(1000), index = pd.date_range( 
+                                '1/1/2000', periods = 1000)) 
+ts = ts.cumsum() 
+ts.plot() 
+plt.show()
+
+Plot of different data:
+import matplotlib.pyplot as plt 
+import pandas as pd 
+import numpy as np   
+ts = pd.Series(np.random.randn(1000), index = pd.date_range( 
+                                '1/1/2000', periods = 1000))   
+df = pd.DataFrame(np.random.randn(1000, 4),  
+   index = ts.index, columns = list('ABCD')) 
+  
+df = df.cumsum() 
+plt.figure() 
+df.plot() 
+plt.show() 
+
+Pie plot:
+import matplotlib.pyplot as plt 
+import pandas as pd 
+import numpy as np   
+series = pd.Series(3 * np.random.rand(4), 
+  index =['a', 'b', 'c', 'd'], name ='series')   
+series.plot.pie(figsize =(4, 4)) 
+plt.show() 
